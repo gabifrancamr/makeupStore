@@ -1,69 +1,290 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Agbalumo&family=Dancing+Script:wght@400;600&family=Titillium+Web:wght@200&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  font-family: "Raleway";
+  background-color: #FFC6C7 ;
+  color: #ad1e3b;
+}
+
+#root {
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: column;
   min-height: 100vh;
 }
 
+#root > header,
+#root > footer {
+  flex: 0 1 auto;
+  padding: 0 2rem;
+}
+
+#root > footer {
+  padding: 1rem 2rem;
+}
+
+#root > div {
+  flex: 1 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 3rem;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  color: #ec4985;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+nav a,
+.logo {
+  display: inline-block;
+  color: #ec4985;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+
+nav a:hover {
+  background-color: #ad1e3b;
+  color: #131313;
+  border-radius: 0.90rem;
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-family: 'Dancing Script', sans-serif;
+}
+
+.tabs {
+  border-bottom: 1px solid #131313;
+  margin: 1rem 0;
+}
+
+.tab {
+  color: #161616;
+  font-weight: 800;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.tab.active {
+  background-color: #ad1e3b;
+  color: #131313;
+  border-radius: 0.90rem;
+  border-bottom: .125rem solid #131313;
+}
+
+.tab:hover {
+  background-color: #ad1e3b;
+  color: #131313;
+  border-radius: 0.90rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+thead {
+  background-color: #ff8ca3;
+  color: #1c1a1d;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  font-size: 20px;
+}
+
+tbody {
+  background-color: #db3e5d;
+  color: #1c1a1d;
+  font-weight: 700;
+}
+
+tbody tr:hover {
+  background-color: #ad1e3b;
+  cursor: default;
+}
+
+th, td {
+  text-align: center;
+  padding: 1.25rem;
+  word-wrap: break-word;
+}
+
+.button {
+  background-color: #fefefe;
+  border-radius: .25rem;
+  border: 0;
+  color: #131313;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: .5em 1em;
+  text-decoration: none;
+  transition: .2s;
+  
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button.is-small {
+  font-size: .875rem;
+}
+
+.button.is-large {
+  font-size: 1.25rem;
+}
+
+.button.is-danger {
+  background-color: #bb0309;
+  color: #fefefe;
+}
+
+.button.is-primary {
+  background-color: #8CC0DE;
+}
+
+.buttons-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+
+}
+
+form {
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 2rem 0;
+  font-weight: 700;
+}
+
+input, textarea, select {
+  background-color: #db3e5d;
+  color: #1c1a1d;
+  border-radius: .25rem;
+  border: 0;
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding: .75rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.row div {
+  flex: 1 0 16rem;
+}
+
+.item-header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.item {
+  background-color: #db3e5d;
+  color: #1c1a1d;
+  padding: 20px;
+  border-radius: 0.90rem;
+}
+
+.item h2 {
+  margin-right: 2rem;
+}
+
+.item span,
+.dashboard-card {
+  background-color: #FFD1DA;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.25);
+  border-radius: .90rem;
+  cursor: default;
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+
+.item p {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.dashboard-card span {
+  display: block;
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-align: center;
+} 
+
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 999;
+}
+
+.box-delete, .notification {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 500px;
+  height: 150px;
+  background-color: #db3e5d;
+  color: #1c1a1d;
+  border-radius: 0.90rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000; 
+}
+
+.box-delete > p {
+  margin: 10px 0 40px 0;
+}
+
+.box-delete button, .notification button {
+  margin: 5px;
+}
+
+
+@media (max-width: 750px) {
+  table {
+    display: flow;
+    width: 100%;
+    overflow: auto
   }
 }
