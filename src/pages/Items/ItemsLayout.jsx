@@ -5,7 +5,7 @@ export default function ItemsLayout() {
   return (
     <>
       <main>
-        <h1>Itens de Maquiagem</h1>
+        <h1>Estoque de Maquiagens</h1>
         <div className="tabs">
           <Link
             to="/makeupStore/items"
