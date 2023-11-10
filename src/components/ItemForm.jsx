@@ -52,13 +52,12 @@ export default function ItemForm({ itemToUpDate }) {
       }
     } catch (error) {
       console.log(error.message);
-    } finally {
-      inputRef.current.focus();
-    }
+    } 
   };
 
   const handleNotificationClose = () => {
     setShowNotification(false);
+    inputRef.current.focus();
 
     if(notificationMessage === "Item atualizado com sucesso!") {
       navigate("/makeupStore/items");
