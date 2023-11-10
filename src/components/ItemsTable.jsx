@@ -10,7 +10,7 @@ export default function ItemsTable() {
       <table>
         <thead>
           <tr>
-            <th>ID</th>
+            <th translate="no">ID</th>
             <th>Nome</th>
             <th>Quantidade</th>
             <th>Preço</th>
@@ -21,7 +21,7 @@ export default function ItemsTable() {
         <tbody>
           {items.map((item) => (
             <tr key={item.id}>
-              <td translate="no">{item.id}</td>
+              <td>{item.id}</td>
               <td>{item.name}</td>
               <td>{item.quantity}</td>
               <td>{item.price}</td>
