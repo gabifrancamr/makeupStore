@@ -24,7 +24,7 @@ export default function Home() {
 
     return (
         <>
-            <h1>Dashboard</h1>
+            <h1 translate="no">Dashboard</h1>
             <div className="row">
                 <div className="dashboard-card">
                     Diversidade de Itens
