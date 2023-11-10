@@ -27,8 +27,8 @@ export default function ItemsTable() {
               <td>{item.price}</td>
               <td>{item.category}</td>
               <td className="buttons-table">
-                <Link to={`/items/${item.id}`} className="button is-small">Ver</Link>
-                <Link to={`/items/${item.id}/update`} className="button is-small is-primary">Atualizar</Link>
+                <Link to={`/makeupStore/items/${item.id}`} className="button is-small">Ver</Link>
+                <Link to={`/makeupStore/items/${item.id}/update`} className="button is-small is-primary">Atualizar</Link>
                 <DeleteButton itemId={item.id} itemName={item.name}/>
               </td>
             </tr>

@@ -9,7 +9,7 @@ import ItemsLayout from "./pages/Items/ItemsLayout";
 
 const router = createBrowserRouter([
   {
-    path: "/<makeupStore>",
+    path: "/makeupStore/",
     element: <RootLayout />,
     children: [
       {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/<makeupStore>/items",
+        path: "/makeupStore/items",
         element: <ItemsLayout />,
         children: [
           {
@@ -25,15 +25,15 @@ const router = createBrowserRouter([
             element: <ListItems />,
           },
           {
-            path: "/<makeupStore>/items/new",
+            path: "new",
             element: <CreateItem />,
           },
           {
-            path: "/<makeupStore>/items/new/:id",
+            path: ":id",
             element: <ShowItem />,
           },
           {
-            path: "/<makeupStore>/items/new/:id/update",
+            path: ":id/update",
             element: <UpdateItem />,
           },
         ],

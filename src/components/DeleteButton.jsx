@@ -15,14 +15,13 @@ export default function DeleteButton({ itemId, itemName }) {
     const navigate = useNavigate()
 
     const handleDelete = () => {
-      console.log("clicou")
       setShowConfirmation(true);
     };
   
     const confirmDelete = () => {
       deleteItem(itemId);
       setShowConfirmation(false);
-      navigate("/items")
+      navigate("/makeupStore/items")
     };
   
     const cancelDelete = () => {

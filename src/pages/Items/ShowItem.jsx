@@ -9,14 +9,11 @@ export default function ShowItem() {
 
     const item = getItem(id)
 
-    console.log(item)
-
-    console.log(id)
     return (
         <div className="item">
             <div className="item-header">
                 <h2>{item.name}</h2>
-                <Link to={`/items/${item.id}/update`} className="button is-small is-primary">Atualizar</Link>
+                <Link to={`/makeupStore/items/${item.id}/update`} className="button is-small is-primary">Atualizar</Link>
                 <DeleteButton itemId={item.id} itemName={item.name} />
             </div>
             <div className="row">

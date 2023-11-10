@@ -8,14 +8,14 @@ export default function ItemsLayout() {
         <h1>Stock Items</h1>
         <div className="tabs">
           <Link
-            to="/items"
+            to="/makeupStore/items"
             className={`tab ${pathname === "/items" ? "active" : ""}`}
           >
             Todos as Maquiagens
           </Link>
 
           <Link
-            to="/items/new"
+            to="/makeupStore/items/new"
             className={`tab ${pathname === "/items/new" ? "active" : ""}`}
           >
             Adicionar Nova Maquiagem

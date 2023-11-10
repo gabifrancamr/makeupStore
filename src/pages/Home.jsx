@@ -57,7 +57,7 @@ export default function Home() {
                                 <tr key={item.id}>
                                     <td>{item.name}</td>
                                     <td>
-                                        <Link to={`items/${item.id}`} className="button is-small">Ver</Link>
+                                        <Link to={`/makeupStore/items/${item.id}`} className="button is-small">Ver</Link>
                                     </td>
                                 </tr>
                             ))}
@@ -79,7 +79,7 @@ export default function Home() {
                                     <td>{item.name}</td>
                                     <td>{item.quantity}</td>
                                     <td>
-                                        <Link to={`/items/${item.id}`} className="button is-small">Ver</Link>
+                                        <Link to={`/makeupStore/items/${item.id}`} className="button is-small">Ver</Link>
                                     </td>
                                 </tr>
                             ))}

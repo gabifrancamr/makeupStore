@@ -44,7 +44,6 @@ export default function ItemForm({ itemToUpDate }) {
         setShowNotification(true);  
       } else {
         const newItem = new StockItem(item);
-        console.log(newItem);
         addItem(newItem);
         //alert("Item adicionado com sucesso")
         setNotificationMessage("Item adicionado com sucesso");
@@ -62,7 +61,7 @@ export default function ItemForm({ itemToUpDate }) {
     setShowNotification(false);
 
     if(notificationMessage === "Item atualizado com sucesso!") {
-      navigate("/items");
+      navigate("/makeupStore/items");
     }
   };
 

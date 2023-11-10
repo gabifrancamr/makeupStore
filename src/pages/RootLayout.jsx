@@ -4,10 +4,10 @@ export default function RootLayout() {
     return  (
         <>
             <header>
-                <Link to="/" className="logo">Makeup Store</Link>
+                <Link to="/makeupStore/" className="logo">Makeup Store</Link>
                 <nav>
-                    <Link to="/items">Itens</Link>
-                    <Link to="/">DashBoard</Link>
+                    <Link to="/makeupStore/items">Itens</Link>
+                    <Link to="/makeupStore/">DashBoard</Link>
                 </nav>
             </header>
             <div>
