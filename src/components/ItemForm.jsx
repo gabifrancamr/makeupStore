@@ -88,7 +88,7 @@ export default function ItemForm({ itemToUpDate }) {
               name="quantity"
               id="quantity"
               required
-              min={0}
+              min={1}
               step={1}
               value={item.quantity}
               onChange={handleChange}
@@ -101,7 +101,7 @@ export default function ItemForm({ itemToUpDate }) {
               name="price"
               id="price"
               required
-              min={0.0}
+              min={1}
               step={0.01}
               value={item.price}
               onChange={handleChange}
