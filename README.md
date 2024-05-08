@@ -1,6 +1,6 @@
 # React + Vite
 
-Projeto para praticar conceitos de React e React DOM =D
+Project to practice React and React DOM concepts
 
 Link: https://gabifrancamr.github.io/makeupStore/
 
