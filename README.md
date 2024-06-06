@@ -4,5 +4,10 @@ Project to practice React and React DOM concepts
 
 Link: https://gabifrancamr.github.io/makeupStore/
 
-https://github.com/gabifrancamr/makeupStore/assets/95250838/37e610fe-bab7-4520-b751-16c2d3b96e0e
+https://github.com/gabifrancamr/makeupStore/assets/95250838/747f6f1b-aa45-48a1-b436-29ea721c2ee2
+
+
+
+
+
 
