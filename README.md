@@ -1,6 +1,10 @@
 # React + Vite
 
-Project to practice React and React DOM concepts
+CRUD (Create, Read, Update, Delete)
+
+CRUD em React que gerencia estoque de maquiagens. Há um dashboard com informações do estoque (diversidade, inventário total, itens recentes, itens acabando). 
+Na página de itens há uma tabela listando todos os itens e é possível ver detalhes, atualizar ou excluir cada um desses itens.
+Além disso, é possível adicionar novos itens.
 
 Link: https://gabifrancamr.github.io/makeupStore/
 
